@@ -1,0 +1,8 @@
+/node_modules
+
+.rajascore
+
+yarn-error.log
+.env
+
+.eslintrc.json
