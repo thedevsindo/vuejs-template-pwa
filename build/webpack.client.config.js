@@ -58,17 +58,6 @@ if (process.env.NODE_ENV === 'production') {
             ]
         })
     )
-} else {
-    config = merge(config, {
-        devServer: {
-            setup: function (app) {
-                app.get('/service-worker.js', function (req, res) {
-                    res.set({ 'Content-Type': 'application/javascript; charset=utf-8' })
-                    res.send(fs.readFileSync(`/${DIST}/service-worker.js`))
-                })
-            }
-        }
-    })
 }
 
 module.exports = config

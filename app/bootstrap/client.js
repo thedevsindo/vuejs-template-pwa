@@ -33,6 +33,7 @@ window.Tether = require('tether')
 
 require('bootstrap')
 require('assets/vendor/jquery-ui/jquery-ui.js')
+require('utils/service-worker-registration.js')
 
 window.dd = function (...logs) {
     /*eslint no-console: ["error", { allow: ["log"] }] */
