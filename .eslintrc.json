@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "globals": {
+        "use": false,
+        "$": false,
+        "videojs": false,
+        "particlesJS": false,
+        "dd": false,
+        "process": false,
+        "__dirname": false,
+        "blob": false,
+        "Buffer": false,
+        "isBrowser": false,
+        "queryRoute": false
+    },
+    "extends": ["eslint:recommended", "plugin:vue/essential"],
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error", 4, { "SwitchCase": 1, "VariableDeclarator": 1 }
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    }
+}
